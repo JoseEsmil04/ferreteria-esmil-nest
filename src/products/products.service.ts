@@ -68,7 +68,7 @@ export class ProductsService {
 
     return product
   }
-s
+  
   async update(id: string, updateProductDto: UpdateProductDto) {
     const productToUpdate = await this.findOne(id)
     await productToUpdate.updateOne(updateProductDto)

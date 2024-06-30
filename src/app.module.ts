@@ -9,6 +9,8 @@ import { ConfigModule } from '@nestjs/config';
 import { EnvConfig } from './config/envconfig';
 import { JoiSchema } from './config/joi.config';
 import { CategoryModule } from './category/category.module';
+import { CustomerModule } from './customer/customer.module';
+import { OrderModule } from './order/order.module';
 
 @Module({
   imports: [
@@ -24,7 +26,9 @@ import { CategoryModule } from './category/category.module';
     ProductsModule,
     CommonModule,
     SeedModule,
-    CategoryModule
+    CategoryModule,
+    CustomerModule,
+    OrderModule
   ],
 })
 export class AppModule {}
